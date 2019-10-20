@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="styles/normalize.min.css">
+	<link rel="stylesheet" href="styles/slick.css" />
 	<link rel="stylesheet" href="styles/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<title>Resume</title>
@@ -94,24 +95,101 @@
 
 				</section>
 
-				<section class="projects">
+				<section class="projects" id="gallery">
 					<h2 class="projects-title title">Projects</h2>
+						<div class="projects-slider">
+							<div class="projects-slide projects-active">
+								<a class="bla" href="projects/theyalow/index.html" target="_blank">
+									<img src="img/theyalow.png" alt="theyalow">
+								</a>
 
-					<ul class="projects-content">
+								<button class="btn projects-descr-btn btn1">☜</button>
+								<div class="projects-descr descr1">
+									<div class="projects-descr-text">
+										<h3 class="projects-descr-title">Theyalow project</h3>
+										<ul class="projects-list">
+											<li>Navigation</li>
+											<li>Slider</li>
+											<li>Embed video</li>
+											<li>Flex layout</li>
+											<li>Adaptation</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-						<li class="projects-item projects-item-active">
-							<img src="img/theyalow.png" alt="theyalow">
-						</li>
-						<li class="projects-item">
-							<img src="img/repair-design-project.png" alt="repair">
-						</li>
-					
-						<button class="projects-btn prev" id="arrow-left"> ← </button>
-						<button class="projects-btn next" id="arrow-right"> → </button>
 
-						<ul class="projects-dots">
-						</ul>
-					</ul>
+							<div class="projects-slide">
+								<a href="projects/repair-design-project/index.html" target="_blank">
+									<img src="img/repair-design-project.png" alt="repair">
+								</a>
+
+								<button class="btn projects-descr-btn btn2">☜</button>
+								<div class="projects-descr descr2">
+									<div class="projects-descr-text">
+										<h3 class="projects-descr-title">Repair project</h3>
+										<ul class="projects-list">
+											<li>Navigation</li>
+											<li>Slider</li>
+											<li>Embed video</li>
+											<li>Forms on the page</li>
+											<li>Complex design</li>
+											<li>Flex layout</li>
+											<li>Adaptation</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn projects-arrow prev" id="arrow-left"> ← </button>
+							<button class="btn projects-arrow next" id="arrow-right"> → </button>
+				
+						</div>
+
+						<div class="mobile-slider">
+
+						<div class="mobile-slide">
+							<a class="bla" href="projects/theyalow/index.html" target="_blank">
+								<img src="img/theyalow.png" alt="theyalow">
+							</a>
+
+								<button class="btn projects-descr-btn btn1">☜</button>
+								<div class="projects-descr">
+								<div class="projects-descr-text">
+									<h3 class="projects-descr-title">Theyalow project</h3>
+									<ul class="projects-list">
+										<li>Navigation</li>
+										<li>Slider</li>
+										<li>Embed video</li>
+										<li>Flex layout</li>
+										<li>Adaptation</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+
+							<div class="mobile-slide">
+								<a href="projects/repair-design-project/index.html" target="_blank">
+								<img src="img/repair-design-project.png" alt="repair">
+								</a>
+
+								<button class="btn projects-descr-btn btn2">☜</button>
+								<div class="projects-descr descr2">
+									<div class="projects-descr-text">
+										<h3 class="projects-descr-title">Repair project</h3>
+										<ul class="projects-list">
+											<li>Navigation</li>
+											<li>Slider</li>
+											<li>Embed video</li>
+											<li>Forms on the page</li>
+											<li>Complex design</li>
+											<li>Flex layout</li>
+											<li>Adaptation</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 				</section>
 
 				<section class="summary">
@@ -185,6 +263,10 @@
 			</main>
 		</div>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script src="main.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

@@ -1063,3 +1063,19 @@ button:hover {
 		margin-left: 64px;
 	}
 }
+
+.fidex-btns{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	right: 10px;
+}
+
+.fidex-btn{
+	background-color: #BF6D30;
+	padding: 10px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}

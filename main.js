@@ -1,8 +1,9 @@
 //dropdown
 const dropdownWrap = document.getElementById('dropdown-wrap'),
-	educationTitle = document.querySelector('.dropdown-title');
+    educationTitle = document.querySelector('.dropdown-title'),
+    education = document.querySelector('.education');
 		
-    document.onclick = function(event) {
+    education.addEventListener('click', (event) => {
     var target = elem = event.target;
     while (target != this) {
 			if (target == dropdownWrap) {
@@ -13,27 +14,11 @@ const dropdownWrap = document.getElementById('dropdown-wrap'),
           target = target.parentNode;
       }
 			dropdownWrap.classList.remove('open');	
-    }
+    });
         
 // slider
-const slide = document.querySelectorAll('.projects-item'),
-    slider = document.querySelector('.projects-content'),
-    portfolioDots = document.querySelector('.projects-dots');
-
-let dot;
-
-const createDots = () => {
-
-    slide.forEach((elem) => {
-        elem = document.createElement('li');
-        elem.className = 'dot';
-        portfolioDots.appendChild(elem);
-
-        dot = document.querySelectorAll('.dot');
-    })
-    dot[0].className = 'dot dot-active';
-};
-createDots();
+const slide = document.querySelectorAll('.projects-slide'),
+    slider = document.querySelector('.projects-slider');
 
 let currentSlide = 0,
     interval;
@@ -46,51 +31,22 @@ const nextSlide = (elem, index, strClass) => {
     elem[index].classList.add(strClass);
 };
 
-const autoPlaySlide = () => {
-    prevSlide(slide, currentSlide, 'projects-item-active');
-    prevSlide(dot, currentSlide, 'dot-active');
-
-    currentSlide++;
-    if (currentSlide >= slide.length) {
-        currentSlide = 0;
-    }
-
-    nextSlide(slide, currentSlide, 'projects-item-active');
-    nextSlide(dot, currentSlide, 'dot-active');
-};
-
-// const startSlide = (time = 3000) => {
-const startSlide = (time = 100000) => {
-    interval = setInterval(autoPlaySlide, time);
-};
-
-const stopSlide = () => {
-    clearInterval(interval);
-};
 
 slider.addEventListener('click', (event) => {
-    event.preventDefault();
-
+    // event.preventDefault();
     let target = event.target;
 
-    if (!target.matches('.projects-btn, .dot')) {
+    if (!target.matches('.projects-arrow')) {
         return;
     }
 
-    prevSlide(slide, currentSlide, 'projects-item-active');
-    prevSlide(dot, currentSlide, 'dot-active');
+    prevSlide(slide, currentSlide, 'projects-active');
 
-    if (target.matches('#arrow-right')) {
-        currentSlide++;
-    } else if (target.matches('#arrow-left')) {
+    if (target.matches('.prev')) {
         currentSlide--;
-    } else if (target.matches('.dot')) {
-        dot.forEach((elem, index) => {
-            if (elem === target) {
-                currentSlide = index;
-            }
-        });
-    }
+    } else if (target.matches('.next')) {
+        currentSlide++;
+    } 
 
     if (currentSlide >= slide.length) {
         currentSlide = 0;
@@ -98,22 +54,25 @@ slider.addEventListener('click', (event) => {
     if (currentSlide < 0) {
         currentSlide = slide.length - 1;
     }
-    nextSlide(slide, currentSlide, 'projects-item-active');
-    nextSlide(dot, currentSlide, 'dot-active');
+    nextSlide(slide, currentSlide, 'projects-active');
 });
 
-slider.addEventListener('mouseover', (event) => {
-    if (event.target.matches('.projects-btn') ||
-        event.target.matches('.dot')) {
-        stopSlide();
-    }
-});
 
-slider.addEventListener('mouseout', (event) => {
-    if (event.target.matches('.projects-btn') ||
-        event.target.matches('.dot')) {
-        startSlide();
-    }
-});
+//descr
 
-startSlide();
+let btn1 = document.querySelector('.btn1'),
+    btn2 = document.querySelector('.btn2'),
+    descr1 = document.querySelector('.descr1'),
+    descr2 = document.querySelector('.descr2'),
+    projects = document.querySelector('.projects');
+
+    projects.addEventListener('click', (event) => {
+        var target = elem = event.target;
+
+        if (target === btn1){
+            descr1.classList.toggle('descr-open');
+        }
+        if (target === btn2){
+            descr2.classList.toggle('descr-open');
+        }
+    });

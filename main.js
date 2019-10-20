@@ -76,3 +76,11 @@ let btn1 = document.querySelector('.btn1'),
             descr2.classList.toggle('descr-open');
         }
     });
+
+//
+
+let change = document.querySelector('.change');
+console.log(change);
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    change.style.display = "none";
+}

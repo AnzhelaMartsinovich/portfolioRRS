@@ -315,6 +315,7 @@ button:hover {
 	-moz-box-shadow: -1px -3px 5px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: -1px -3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .advantages {
 	background: url("../img/main/advantages-bg.png"), no-repeat;
 	background-color: #fff;
@@ -557,6 +558,7 @@ button:hover {
 	-moz-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .free {
 	background: url("../img/main/free-bg.jpg"), no-repeat;
 	background-size: cover;
@@ -647,6 +649,7 @@ button:hover {
 	text-transform: uppercase;
 	letter-spacing: 0.51px;
 }
+
 .footer__shadow {
 	height: 3px;
 	-webkit-box-shadow: -1px -4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -678,7 +681,7 @@ button:hover {
 }
 
 
-@media(max-width: 1030px) {
+/* @media(max-width: 1030px) { */
 	.container {
 		width: 860px;
 	}
@@ -737,9 +740,9 @@ button:hover {
 	.free__list {
 		display: none;
 	}
-}
+/* }
 
-@media(max-width: 870px) {
+@media(max-width: 870px) { */
 	.container {
 		width: 640px;
 	}
@@ -802,11 +805,11 @@ button:hover {
 		padding: 0 20px;
 	}
 
-	.theCool__video__play-btn{
+	.theCool__video__play-btn {
 		left: 46%;
 	}
 
-	.theCool__video-controls{
+	.theCool__video-controls {
 		margin-left: 82px;
 		margin-right: 49px;
 		bottom: 22px;
@@ -830,7 +833,7 @@ button:hover {
 		left: 46%;
 	}
 
-	.advantages__blocks{
+	.advantages__blocks {
 		position: relative;
 	}
 
@@ -847,7 +850,7 @@ button:hover {
 		z-index: 2;
 	}
 
-	.advantages__blocks:before{
+	.advantages__blocks:before {
 		top: -3px;
 	}
 
@@ -1062,9 +1065,9 @@ button:hover {
 		padding-bottom: 5px;
 		margin-left: 64px;
 	}
-}
+/* } */
 
-.fidex-btns{
+.fidex-btns {
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -1073,11 +1076,11 @@ button:hover {
 	z-index: 5;
 }
 
-.fidex-btns a{
+.fidex-btns a {
 	color: black;
 }
 
-.fidex-btn{
+.fidex-btn {
 	background-color: #BF6D30;
 	padding: 10px;
 	font-size: 14px;

@@ -1762,7 +1762,7 @@ a {
   border-radius: 2px;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) { */
   .projects-other-slider__photo-right,
   .main-instagram-block,
   .main::before,
@@ -1915,9 +1915,9 @@ a {
   .title-img::after {
     right: 45%;
   }
-}
+/* }
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { */
   .projects-details__title::after,
   .design-steps,
   .main-scroll,
@@ -2169,9 +2169,9 @@ a {
   .question-form-bg {
     width: 100%;
   }
-}
+/* }
 
-@media (max-width: 865px) {
+@media (max-width: 865px) { */
   .header-call__btn,
   .footer-call__btn,
   .projects-slider-nav,
@@ -2303,9 +2303,9 @@ a {
   .contacts__address {
     width: auto;
   }
-}
+/* }
 
-@media (max-width: 560px) {
+@media (max-width: 560px) { */
   .clients {
     display: none;
   }
@@ -2568,25 +2568,26 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-.fidex-btns {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  right: 10px;
-  z-index: 4;
-}
+	}
+	
+	.fidex-btns {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		bottom: 0;
+		right: 10px;
+		z-index: 4;
+	}
 
-.fidex-btns a {
-  color: black;
-}
+	.fidex-btns a {
+		color: black;
+	}
 
-.fidex-btn {
-  background-color: #BF6D30;
-  padding: 10px;
-  font-size: 14px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
+	.fidex-btn {
+		background-color: #BF6D30;
+		padding: 10px;
+		font-size: 14px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+/* } */

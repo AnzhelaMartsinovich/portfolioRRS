@@ -66,6 +66,11 @@ let btn1 = document.querySelector('.btn1'),
     descr2 = document.querySelector('.descr2'),
     projects = document.querySelector('.projects');
 
+let btn1Mob = document.querySelector('.btn1Mob'),
+    btn2Mob = document.querySelector('.btn2Mob'),
+    descr1Mob = document.querySelector('.descr1-mob'),
+    descr2Mob = document.querySelector('.descr2-mob');
+
     projects.addEventListener('click', (event) => {
         var target = elem = event.target;
 
@@ -75,12 +80,11 @@ let btn1 = document.querySelector('.btn1'),
         if (target === btn2){
             descr2.classList.toggle('descr-open');
         }
+        if (target === btn1Mob) {
+            descr1Mob.classList.toggle('descr-open');
+        }
+        if (target === btn2Mob) {
+            descr2Mob.classList.toggle('descr-open');
+        }
     });
 
-//
-
-let change = document.querySelector('.change');
-console.log(change);
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    change.style.display = "none";
-}

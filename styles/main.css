@@ -112,7 +112,7 @@ header {
 }
 
 .experience-item {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .english-title{
@@ -139,8 +139,9 @@ header {
 
 .dropdown-list li {
 	background: #009E8E;
-	height: 35px;
-	padding: 20px 0 30px 5px;
+	padding: 20px 0 5px 5px;
+	/* height: 35px; */
+	/* padding: 20px 0 30px 5px; */
 }
 
 .dropdown-list li a {
@@ -167,10 +168,6 @@ header {
 	background-color: #009E8E;
 	color: black;
 	border-bottom: 4px solid #BF6D30;
-}
-
-.dropdown-wrap.open .title::after {
-	background: url(img/arrow_up.png) no-repeat 10px center;
 }
 
 .dropdown-wrap.open ul {
@@ -228,13 +225,15 @@ header {
 
 
 /* всплывающее описание */
-.projects-descr-btn {
+.projects-descr-btn,
+.projects-descr-btn-mobile {
 	position: absolute;
 	top: 10%;
 	right: 5px;
 }
 
-.projects-descr {
+.projects-descr,
+.projects-descr-mob {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
@@ -286,8 +285,17 @@ header {
 		width: 575px;
 	}
 
+	header {
+		height: auto;
+		padding-top: 25px;
+	}
+
 	.header-img{
 		display: none;
+	}
+
+	.summary-descr{
+		line-height: 25px;
 	}
 
 	.projects-slider{
@@ -303,7 +311,7 @@ header {
 		position: relative;
 	}
 
-	.projects-descr {
+	.projects-descr-mob {
 		width: 200px;
 		position: absolute;
 		background: black;
@@ -322,10 +330,63 @@ header {
 	.descr-open {
 		display: block;
 	}
+
+	.contact{
+		padding-bottom: 50px;
+	}
+	
 }
 
 @media(max-width: 580px) {
 	.container {
 		width: 320px;
+	}
+
+	.title{
+		font-size: 20px;
+	}
+
+	.header-title {
+		font-size: 27px;
+		margin-bottom: 30px;
+	}
+
+	.contact-title {
+		font-size: 23px;
+		margin-bottom: 30px;
+	}
+
+	.dropdown-list-title{
+		font-size: 17px;
+	}
+
+	.summary-descr p,
+	.skills-list,
+	.code-examples-list,
+	.experience-list,
+	.english-descr,
+	.dropdown-list span {
+		font-size: 14px;
+	}
+	.btn{
+		font-size: 27px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.projects-list li {
+		margin-bottom: 5px;
+		font-size: 13px;
+	}
+
+	.projects-descr-title {
+		margin-bottom: 0;
+		margin-top: 5px;
+		font-size: 16px;
+	}
+
+	.projects-descr-text{
+		top: 3%;
+	 	transform: translateX(-50%);
 	}
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="10px" height="16px" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid meet">
+<g id="layer101" fill="#f5c507" stroke="none">
+ <path d="M0 80 l0 -80 50 0 50 0 0 80 0 80 -50 0 -50 0 0 -80z"/>
+ </g>
+<g id="layer102" fill="#f7cf32" stroke="none">
+ <path d="M90 150 c0 -6 -20 -20 -45 -32 -52 -25 -55 -35 -20 -48 14 -5 34 -23 43 -40 9 -16 20 -30 25 -30 4 0 7 36 7 80 0 44 -2 80 -5 80 -3 0 -5 -5 -5 -10z"/>
+ </g>
+<g id="layer103" fill="#f8da63" stroke="none">
+ <path d="M90 148 c0 -7 -20 -21 -45 -31 -49 -21 -56 -32 -25 -42 11 -3 33 -23 50 -43 l30 -37 0 83 c0 45 -2 82 -5 82 -3 0 -5 -6 -5 -12z"/>
+ </g>
+<g id="layer104" fill="#fae48c" stroke="none">
+ <path d="M92 143 c-1 -6 -12 -15 -24 -19 -13 -4 -33 -14 -46 -22 l-23 -15 29 -14 c15 -7 37 -28 48 -46 l19 -32 3 43 c3 40 -3 131 -6 105z"/>
+ </g>
+<g id="layer105" fill="#fceba9" stroke="none">
+ <path d="M92 144 c-1 -5 -23 -20 -49 -33 l-47 -23 31 -13 c17 -8 40 -28 50 -47 l18 -33 3 43 c3 39 -3 130 -6 106z"/>
+ </g>
+<g id="layer106" fill="#fdf4d0" stroke="none">
+ <path d="M46 113 l-50 -25 30 -13 c17 -7 40 -28 52 -46 l22 -34 0 73 c0 39 -1 72 -2 72 -2 -1 -25 -12 -52 -27z"/>
+ </g>
+<g id="layer107" fill="#fffffe" stroke="none">
+ <path d="M75 127 c-11 -6 -31 -18 -44 -25 l-23 -14 23 -12 c13 -6 34 -27 46 -45 l23 -34 0 72 c0 39 -1 71 -2 70 -2 0 -12 -5 -23 -12z"/>
+ </g>
+
+</svg>

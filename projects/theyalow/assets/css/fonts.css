@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-Light.woff2") format("woff2"),
+        url("../fonts/SegoeUI-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/PTSans-Narrow.woff2") format("woff2"),
+        url("../fonts/PTSans-Narrow.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"),
+        url("../fonts/SegoeUI-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lucida Sans";
+    src: url("../fonts/LucidaSans-Italic.woff2") format("woff2"),
+        url("../fonts/LucidaSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
+        url("../fonts/PTSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe WP";
+    src: url("../fonts/SegoeWP-Light.woff2") format("woff2"),
+        url("../fonts/SegoeWP-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI.woff2") format("woff2"),
+        url("../fonts/SegoeUI.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url("../fonts/Asap-Regular.woff2") format("woff2"),
+        url("../fonts/Asap-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+

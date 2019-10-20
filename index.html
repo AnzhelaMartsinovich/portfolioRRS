@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/normalize.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<title>Resume</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-title">Anzhela Martsinovich</h1>
+				<img class="header-img" src="img/my_photo.jpeg" alt="Anzhela Martsinovich">
+
+				<div class="contact">
+					<h2 class="contact-title">Contact Info:</h2>
+
+					<div class="contact-item">
+						<span>E-mail:</span>
+						<a href="mailto:anzhela.martsinovich@gmail.com">
+							anzhela.martsinovich@gmail.com
+						</a>
+					</div>
+
+					<div class="contact-item">
+						<span>GitHub:</span>
+						<a href="https://github.com/AnzhelaMartsinovich" target="_blank">
+							github.com/AnzhelaMartsinovich
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<div class="container">
+			<main>
+				<section class="education">
+
+					<div id="dropdown-wrap" class="dropdown-wrap">
+						<h2 class="dropdown-title title">Education</h2>
+
+						<ul class="dropdown-list">
+							<li>
+								<h3 class="dropdown-list-title">School</h3>
+								<span>2001 - 2011</span>
+							</li>
+							<li>
+								<h3 class="dropdown-list-title">University</h3>
+								<span>2011 - 2016</span>
+							</li>
+							<li>
+								<h3 class="dropdown-list-title">Glo Academy courses</h3>
+								<span>2017 - 2018</span>
+							</li>
+							<li>
+								<h3 class="dropdown-list-title">RSSchool courses</h3>
+								<span>2019 - 2020</span>
+							</li>
+						</ul>
+						
+					</div>
+
+
+					<!-- <div class="dropdown-list">
+						<h2 class="education-title title">Education</h2>
+						
+						<ul>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Русский</a></li>
+							<li><a href="#">Украинский</a></li>
+						</ul>
+
+					</div> -->
+
+<!-- 
+					<h3>School</h3>
+					2001 - 2011
+
+					<h3>University</h3>
+					2011 - 2016
+
+					<h3>Glo Academy courses</h3>
+					2017 - 2018
+
+					<h3>RSSchool courses</h3>
+					2019 - 2020 -->
+
+				</section>
+
+				<section class="projects">
+					<h2 class="projects-title title">Projects</h2>
+
+					<ul class="projects-content">
+
+						<li class="projects-item projects-item-active">
+							<img src="img/theyalow.png" alt="theyalow">
+						</li>
+						<li class="projects-item">
+							<img src="img/repair-design-project.png" alt="repair">
+						</li>
+					
+						<button class="projects-btn prev" id="arrow-left"> ← </button>
+						<button class="projects-btn next" id="arrow-right"> → </button>
+
+						<ul class="projects-dots">
+						</ul>
+					</ul>
+				</section>
+
+				<section class="summary">
+					<h2 class="summary-title title">Summary:</h2>
+		
+					<div class="summary-descr">
+						<p>I am a humanitarian who decided to develop in the field of Front-end, because it is a very fascinating and
+							diverse area.</p>
+						<p>At the moment I have knowledge in layout and try to make friends with Java Script)</p>
+						<p>I'm studying at Rolling Scopes school. Studying at this school is very intensive, lecturers give lectures
+							for us 3 times a week, and besides this, we study new material on our own and do various tasks.</p>
+					</div>
+				</section>
+
+				<section class="skills">
+					<h2 class="skills-title title">Skills:</h2>
+				
+					<ol class="skills-list">
+						<li class="skills-item">HTML, CSS</li>
+						<li class="skills-item">CSS preprocessors: SASS/SCSS, Less</li>
+						<li class="skills-item">Bootstrap 4</li>
+						<li class="skills-item">Version control: Git</li>
+						<li class="skills-item">Methodologies: BEM</li>
+						<li class="skills-item">Pixel perfect</li>
+						<li class="skills-item">Responsive/adaptive design</li>
+						<li class="skills-item">Programming languages: JavaScript basics</li>
+					</ol>
+				</section>
+				
+				<section class="code-examples-title">
+					<h2 class="code-examples-title title">Code examples:</h2>
+				
+					<ul class="code-examples-list">
+						<li class="code-examples-item">
+							<a href="http://martsinovich-anzhela.ru/blissmaldives">Blissmaldives</a>
+						</li>
+						<li class="code-examples-item">
+							<a href="http://martsinovich-anzhela.ru/diplom/">Wedding</a>
+						</li>
+						<li class="code-examples-item">
+							<a href="http://martsinovich-anzhela.ru/good_cardboard/">Good Cardboard</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="experience">
+					<h2 class="experience-title title">Experience/Education:</h2>
+				
+					<ul class="experience-list">
+						<li class="experience-item">Online education</li>
+						<ul>
+							<li class="experience-item">Glo Academy (courses)</li>
+							<li class="experience-item">HTML Academy</li>
+							<li class="experience-item">Codecademy</li>
+							<li class="experience-item">Codewars</li>
+						</ul>
+						<li class="experience-item">Glo Academy (work as a mentor)</li>
+						<li class="experience-item">Self-educated</li>
+					</ul>
+				</section>
+				
+				<section class="english">
+					<h2 class="english-title title">English:</h2>
+				
+					<div class="english-descr">Graduated English course February 2018, language level - A2.
+						I use the site lingualeo.com for reading, learning grammar and listening and Simpler application on my phone
+						for
+						practicing English.
+					</div>
+				</section>
+			</main>
+		</div>
+
+<script src="main.js"></script>
+</body>
+</html>

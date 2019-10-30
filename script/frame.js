@@ -2,10 +2,14 @@ const btnChange = document.querySelector('.change'),
 	text = document.querySelector('.change-text'),
 	iframe = document.querySelector('.iframe'),
 	containerFrame = document.querySelector('.container-iframe');
+	text.textContent = 'MOBILE';
 
-function changeText(width) {
-	let newText = width > 640 ? 'mobile' : 'desktop';
-	text.textContent = newText.toUpperCase();
+function changeText() {
+	if (text.textContent === 'MOBILE') {
+		text.textContent = 'DESKTOP';
+	} else {
+		text.textContent = 'MOBILE';
+	}
 }
 
 function changeWidth() {
@@ -20,7 +24,6 @@ function changeWidth() {
 		iframe.classList.toggle('repair-height');
 		iframe.classList.toggle('repair-height-mob');
 	}
-
-	changeText(getComputedStyle(iframe).width);
+	changeText();
 }
 btnChange.addEventListener('click', changeWidth);

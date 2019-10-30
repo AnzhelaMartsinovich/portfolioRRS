@@ -10,14 +10,14 @@
 
 button,
 input {
-	outline: none;
+	outline: 0;
 	border: 0;
 }
 
 button:focus,
 input:focus {
-	outline: none;
-	border: none;
+	outline: 0;
+	border: 0;
 }
 
 input::-moz-focus-outer,

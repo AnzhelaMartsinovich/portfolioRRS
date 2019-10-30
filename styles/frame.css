@@ -1,0 +1,59 @@
+button,
+input {
+	border: 0;
+	outline: 0;
+}
+
+button:focus {
+	border: 0;
+	outline: 0;
+}
+
+a:hover,
+button:hover {
+	cursor: pointer;
+}
+
+.container-iframe{
+	margin: 0 auto;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.iframe-wrap{
+	height: 0;
+}
+
+.iframe{
+	height: 1850px;
+}
+
+.fidex-btns {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	right: 20px;
+	z-index: 5;
+}
+
+.fidex-btn {
+	background-color: transparent;
+	border: 1px solid #BF6D30;
+	padding: 10px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.fidex-btn:hover{
+	background-color: rgb(248, 248, 248);
+	opacity: 0.5;
+}
+
+.change-text,
+.btn-back a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #BF6D30;
+}

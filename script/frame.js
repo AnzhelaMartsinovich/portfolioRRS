@@ -13,15 +13,6 @@ function changeWidth() {
 		containerFrame.classList.toggle('width640');
 		iframe.classList.toggle('theyalow-height');
 		iframe.classList.toggle('theyalow-height-mob');
-		// if (containerFrame.classList.contains('width640')) {
-		// 	containerFrame.classList.remove('width640');
-		// 	iframe.classList.add('theyalow-height');
-		// 	iframe.classList.remove('theyalow-height-mob');
-		// } else {
-		// 	containerFrame.classList.add('width640');
-		// 	iframe.classList.remove('theyalow-height');
-		// 	iframe.classList.add('theyalow-height-mob');
-		// }
 	}
 
 	if (iframe.classList[1] === 'repair-iframe') {

@@ -1,15 +1,18 @@
 html {
 	box-sizing: border-box;
-	background-color: rgb(159, 207, 203);
 	font-family: Montserrat, sans-serif;
 }
 
+.bg-portfolio {
+	background-color: rgb(159, 207, 203);
+}
+
 h2,
-h3{
+h3 {
 	margin: 0;
 }
 
-img{
+img {
 	width: 100%;
 }
 
@@ -24,12 +27,12 @@ section {
 }
 
 a,
-button{
+button {
 	outline: 0;
 }
 
 a:hover,
-button:hover{
+button:hover {
 	cursor: pointer;
 }
 
@@ -60,7 +63,6 @@ header {
 	padding-top: 50px;
 	height: 400px;
 	background-color: #009E8E;
-	/* box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22); */
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 }
 
@@ -115,7 +117,7 @@ header {
 	margin-bottom: 15px;
 }
 
-.english-title{
+.english-title {
 	padding-bottom: 15px;
 }
 
@@ -125,7 +127,6 @@ header {
 }
 
 /* dropdown-list */
-
 .dropdown-list-title {
 	padding-bottom: 10px;
 }
@@ -140,8 +141,6 @@ header {
 .dropdown-list li {
 	background: #009E8E;
 	padding: 20px 0 5px 5px;
-	/* height: 35px; */
-	/* padding: 20px 0 30px 5px; */
 }
 
 .dropdown-list li a {
@@ -175,8 +174,7 @@ header {
 }
 
 /* slider */
-
-.projects-title{
+.projects-title {
 	padding-bottom: 40px;
 }
 
@@ -204,22 +202,21 @@ header {
 	right: 5px;
 }
 
-
 .projects-active {
 	display: flex;
 }
 
-.projects-descr-title{
+.projects-descr-title {
 	color: #BF6D30;
 	margin-bottom: 30px;
 }
 
-.projects-list{
+.projects-list {
 	list-style: none;
 	padding-left: 0;
 }
 
-.projects-list li{
+.projects-list li {
 	margin-bottom: 15px;
 }
 
@@ -241,7 +238,7 @@ header {
 	height: 100%;
 }
 
-.projects-descr-text{
+.projects-descr-text {
 	position: absolute;
 	width: 80%;
 	margin: 0 auto;
@@ -252,35 +249,33 @@ header {
 	text-align: center;
 }
 
-.descr-open{
+.descr-open {
 	display: block;
 }
 
-
-.mobile-slider{
+.mobile-slider {
 	display: none;
 }
 
-.fidex-btns{
+.fidex-btns {
 	position: fixed;
 }
 
 @media(max-width: 1100px) {
-	.container{
+	.container {
 		width: 760px;
 	}
 
-	.header-title{
+	.header-title {
 		font-size: 30px;
 	}
 
-	.contact-title{
+	.contact-title {
 		font-size: 25px;
 	}
 }
 
-
-@media(max-width: 900px){
+@media(max-width: 900px) {
 	.container {
 		width: 575px;
 	}
@@ -290,24 +285,24 @@ header {
 		padding-top: 25px;
 	}
 
-	.header-img{
+	.header-img {
 		display: none;
 	}
 
-	.summary-descr{
+	.summary-descr {
 		line-height: 25px;
 	}
 
-	.projects-slider{
+	.projects-slider {
 		display: none;
 	}
 
-	.mobile-slider{
+	.mobile-slider {
 		display: block;
 		position: relative;
 	}
 
-	.mobile-slide{
+	.mobile-slide {
 		position: relative;
 	}
 
@@ -327,14 +322,14 @@ header {
 	.projects-descr-title {
 		margin-bottom: 20px;
 	}
+
 	.descr-open {
 		display: block;
 	}
 
-	.contact{
+	.contact {
 		padding-bottom: 50px;
 	}
-	
 }
 
 @media(max-width: 580px) {
@@ -342,7 +337,7 @@ header {
 		width: 320px;
 	}
 
-	.title{
+	.title {
 		font-size: 20px;
 	}
 
@@ -356,7 +351,7 @@ header {
 		margin-bottom: 30px;
 	}
 
-	.dropdown-list-title{
+	.dropdown-list-title {
 		font-size: 17px;
 	}
 
@@ -368,7 +363,8 @@ header {
 	.dropdown-list span {
 		font-size: 14px;
 	}
-	.btn{
+
+	.btn {
 		font-size: 27px;
 		width: 40px;
 		height: 40px;
@@ -385,8 +381,74 @@ header {
 		font-size: 16px;
 	}
 
-	.projects-descr-text{
+	.projects-descr-text {
 		top: 3%;
-	 	transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
+}
+
+/* frame */
+.container-iframe {
+	margin: 0 auto;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.iframe-wrap {
+	height: 0;
+}
+
+.theyalow-height {
+	height: 1850px;
+}
+
+.theyalow-height-mob {
+	height: 1551px;
+}
+
+.repair-height {
+	height: 10055px;
+}
+
+.repair-height-mob {
+	height: 9435px;
+}
+
+.fidex-btns {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	right: 15px;
+	z-index: 5;
+}
+
+.fidex-btn {
+	background-color: transparent;
+	border: 1px solid #BF6D30;
+	padding: 10px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.fidex-btn:hover {
+	background-color: rgb(248, 248, 248);
+	opacity: 0.5;
+}
+
+.change-text,
+.btn-back a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #BF6D30;
+}
+
+.width640 {
+	width: 640px;
+	height: 1551px;
+}
+
+.width375 {
+	width: 375px;
 }

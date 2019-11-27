@@ -365,6 +365,7 @@ a {
 
 .main {
   position: relative;
+  max-height: 747px;
   margin-bottom: 40px;
   background-image: url("../img/main-bg.jpg");
   background-size: cover;
@@ -480,14 +481,18 @@ a {
 
 .main-scroll {
   position: absolute;
-  bottom: -20px;
+  bottom: -50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 34px 48px 0 5%;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 247px;
+  height: 97px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #131313;
   color: #ffffff;
 }

@@ -2,20 +2,19 @@
 const dropdownWrap = document.getElementById('dropdown-wrap'),
     educationTitle = document.querySelector('.dropdown-title'),
     education = document.querySelector('.education');
-		
-    education.addEventListener('click', (event) => {
+
+education.addEventListener('click', (event) => {
     var target = elem = event.target;
     while (target != this) {
-			if (target == dropdownWrap) {
-						// if (elem.tagName == 'LI') educationTitle.innerHTML = elem.textContent;
-				dropdownWrap.classList.toggle('open')
-              return;
-          }
-          target = target.parentNode;
-      }
-			dropdownWrap.classList.remove('open');	
-    });
-        
+        if (target == dropdownWrap) {
+            dropdownWrap.classList.toggle('open')
+            return;
+        }
+        target = target.parentNode;
+    }
+    dropdownWrap.classList.remove('open');
+});
+
 // slider
 const slide = document.querySelectorAll('.projects-slide'),
     slider = document.querySelector('.projects-slider');
@@ -33,7 +32,6 @@ const nextSlide = (elem, index, strClass) => {
 
 
 slider.addEventListener('click', (event) => {
-    // event.preventDefault();
     let target = event.target;
 
     if (!target.matches('.projects-arrow')) {
@@ -46,7 +44,7 @@ slider.addEventListener('click', (event) => {
         currentSlide--;
     } else if (target.matches('.next')) {
         currentSlide++;
-    } 
+    }
 
     if (currentSlide >= slide.length) {
         currentSlide = 0;
@@ -59,7 +57,6 @@ slider.addEventListener('click', (event) => {
 
 
 //descr
-
 let btn1 = document.querySelector('.btn1'),
     btn2 = document.querySelector('.btn2'),
     descr1 = document.querySelector('.descr1'),
@@ -71,20 +68,19 @@ let btn1Mob = document.querySelector('.btn1Mob'),
     descr1Mob = document.querySelector('.descr1-mob'),
     descr2Mob = document.querySelector('.descr2-mob');
 
-    projects.addEventListener('click', (event) => {
-        var target = elem = event.target;
+projects.addEventListener('click', (event) => {
+    var target = elem = event.target;
 
-        if (target === btn1){
-            descr1.classList.toggle('descr-open');
-        }
-        if (target === btn2){
-            descr2.classList.toggle('descr-open');
-        }
-        if (target === btn1Mob) {
-            descr1Mob.classList.toggle('descr-open');
-        }
-        if (target === btn2Mob) {
-            descr2Mob.classList.toggle('descr-open');
-        }
-    });
-
+    if (target === btn1) {
+        descr1.classList.toggle('descr-open');
+    }
+    if (target === btn2) {
+        descr2.classList.toggle('descr-open');
+    }
+    if (target === btn1Mob) {
+        descr1Mob.classList.toggle('descr-open');
+    }
+    if (target === btn2Mob) {
+        descr2Mob.classList.toggle('descr-open');
+    }
+});

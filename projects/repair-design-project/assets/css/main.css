@@ -2575,7 +2575,7 @@ a {
             flex-direction: column;
   }
 }
-.fidex-btns {
+.fixed-btns {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -2584,11 +2584,11 @@ a {
   z-index: 4;
 }
 
-.fidex-btns a {
+.fixed-btns a {
   color: black;
 }
 
-.fidex-btn {
+.fixed-btn {
   background-color: #BF6D30;
   padding: 10px;
   font-size: 14px;

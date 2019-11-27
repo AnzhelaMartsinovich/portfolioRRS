@@ -760,7 +760,6 @@ button:hover {
 		width: 187px;
 		padding: 11px 17px 13px 13px;
 		background-color: #4a4a4a;
-		background-image: url("../assets/img/mobile/header-logo-mobile.jpg");
 	}
 
 	.header__nav-item img {
@@ -1064,7 +1063,7 @@ button:hover {
 	}
 }
 
-.fidex-btns{
+.fixed-btns {
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -1073,11 +1072,11 @@ button:hover {
 	z-index: 5;
 }
 
-.fidex-btns a{
+.fixed-btns a {
 	color: black;
 }
 
-.fidex-btn{
+.fixed-btn {
 	background-color: #BF6D30;
 	padding: 10px;
 	font-size: 14px;

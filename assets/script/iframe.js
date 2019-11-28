@@ -1,7 +1,7 @@
-const btnChange = document.querySelector('.change'),
-	text = document.querySelector('.change-text'),
-	iframe = document.querySelector('.iframe'),
-	containerFrame = document.querySelector('.container-iframe');
+const btnChange = document.querySelector('.change');
+const text = document.querySelector('.change-text');
+const iframe = document.querySelector('.iframe');
+const containerFrame = document.querySelector('.container-iframe');
 text.textContent = 'MOBILE';
 
 function changeText() {

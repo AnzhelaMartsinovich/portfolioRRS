@@ -1,26 +1,46 @@
 //dropdown
-const dropdownWrap = document.getElementById('dropdown-wrap'),
-    educationTitle = document.querySelector('.dropdown-title'),
-    education = document.querySelector('.education');
+const dropdownWrap = document.getElementById('dropdown-wrap');
+const education = document.querySelector('.education');
 
+// const dropdownTitle = document.querySelector('.dropdown-title'),
+//     dropdownWrap = document.querySelector('menu'),
+//     menuItems = dropdownWrap.querySelectorAll('ul > li');
+//     console.log(dropdownWrap.querySelectorAll('ul > li'));
+//     handleMenu = () => {
+//         dropdownWrap.classList.toggle('open');
+//     }
+
+// dropdownTitle.addEventListener('click', handleMenu);
+
+// dropdownWrap.addEventListener('click', (event) => {
+//     let target = event.target;
+
+//     if (target.classList.contains('dropdown-title')) {
+//         handleMenu();
+//     } else if (target.classList.contains(menuItems)) {
+//         menuItems.forEach(() => {
+//             handleMenu();
+//         });
+//     }
+// });
+    
 education.addEventListener('click', (event) => {
-    var target = elem = event.target;
+    let target = elem = event.target;
     while (target != this) {
-        if (target == dropdownWrap) {
-            dropdownWrap.classList.toggle('open')
+        if (target === dropdownWrap) {
+            dropdownWrap.classList.toggle('open');
             return;
         }
         target = target.parentNode;
     }
-    dropdownWrap.classList.remove('open');
 });
 
 // slider
-const slide = document.querySelectorAll('.projects-slide'),
-    slider = document.querySelector('.projects-slider');
+const slide = document.querySelectorAll('.projects-slide');
+const slider = document.querySelector('.projects-slider');
 
-let currentSlide = 0,
-    interval;
+let currentSlide = 0;
+let interval;
 
 const prevSlide = (elem, index, strClass) => {
     elem[index].classList.remove(strClass);
@@ -33,7 +53,6 @@ const nextSlide = (elem, index, strClass) => {
 
 slider.addEventListener('click', (event) => {
     let target = event.target;
-
     if (!target.matches('.projects-arrow')) {
         return;
     }
@@ -55,32 +74,26 @@ slider.addEventListener('click', (event) => {
     nextSlide(slide, currentSlide, 'projects-active');
 });
 
-
 //descr
-let btn1 = document.querySelector('.btn1'),
-    btn2 = document.querySelector('.btn2'),
-    descr1 = document.querySelector('.descr1'),
-    descr2 = document.querySelector('.descr2'),
-    projects = document.querySelector('.projects');
-
-let btn1Mob = document.querySelector('.btn1Mob'),
-    btn2Mob = document.querySelector('.btn2Mob'),
-    descr1Mob = document.querySelector('.descr1-mob'),
-    descr2Mob = document.querySelector('.descr2-mob');
+const projects = document.querySelector('.projects');
+const descr1 = document.querySelector('.descr1');
+const descr2 = document.querySelector('.descr2');
+const descr1Mob = document.querySelector('.descr1-mob');
+const descr2Mob = document.querySelector('.descr2-mob');
 
 projects.addEventListener('click', (event) => {
-    var target = elem = event.target;
-
-    if (target === btn1) {
+    let target = elem = event.target;
+    if (target.closest('.btn1')) {
+        console.log();
         descr1.classList.toggle('descr-open');
     }
-    if (target === btn2) {
+    if (target.closest('.btn2')) {
         descr2.classList.toggle('descr-open');
     }
-    if (target === btn1Mob) {
+    if (target.closest('.btn1Mob')) {
         descr1Mob.classList.toggle('descr-open');
     }
-    if (target === btn2Mob) {
+    if (target.closest('.btn2Mob')) {
         descr2Mob.classList.toggle('descr-open');
     }
 });

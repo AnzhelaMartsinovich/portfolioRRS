@@ -132,10 +132,11 @@ header {
 }
 
 .dropdown-list {
+	position: absolute;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: none;
+	opacity: 0;
 }
 
 .dropdown-list li {
@@ -168,9 +169,10 @@ header {
 	color: black;
 	border-bottom: 4px solid #BF6D30;
 }
-
 .dropdown-wrap.open ul {
-	display: block;
+	position: relative;
+	opacity: 1;
+	transition: .5s linear;
 }
 
 /* slider */
